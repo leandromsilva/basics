@@ -1,3 +1,5 @@
+//Programa que calcula média de quatro unidades e avisa se o aluno passou 
+
 #include <stdio.h>
 #include <locale.h>
 
@@ -18,7 +20,15 @@ int main()
 	scanf("%f", &nota4);
 		
 	media = (nota1 + nota2 + nota3 + nota4)/4;
-	printf("O(a) aluno(a): %s teve média %.2f\n", nomeAluno, media);
+	
+	if(media >= 7) {
+		printf("O(a) aluno(a): %s teve média %.2f\n", nomeAluno, media);
+		printf("Parabéns, passou!\n");
+	}
+	else {
+		printf("O(a) aluno(a): %s teve média %.2f\n", nomeAluno, media);
+		printf("Infelizmente, não passou!\n");
+	}
 	system("pause");
 	return 0;
 		
