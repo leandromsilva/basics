@@ -12,5 +12,5 @@ for(var i = 0; i < 10; i++){
     })
 }
 
-funcs[2] ()
+funcs[2] () // no exemplo de var as duas apontam para o valor errado (10)
 funcs[8] ()
